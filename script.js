@@ -1,5 +1,5 @@
 document.querySelector(".svg.btn").addEventListener("click", function (event) {
-  event.preventDefault(); // Prevent the default form submission behavior
+  event.preventDefault();
   calculateAge();
 });
 
@@ -9,7 +9,7 @@ function calculateAge() {
   const yearInput = document.getElementById("year");
 
   const day = parseInt(dayInput.value);
-  const month = parseInt(monthInput.value) - 1; // JavaScript months are 0-11
+  const month = parseInt(monthInput.value) - 1;
   const year = parseInt(yearInput.value);
 
   const dayError = document.getElementById("day-error");

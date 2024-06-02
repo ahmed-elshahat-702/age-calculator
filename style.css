@@ -144,6 +144,7 @@ input[type="number"] {
   .container {
     width: 90%;
     padding: 20px;
+    border-radius: 10px 10px 45% 10px;
   }
 
   .input-dev {
@@ -170,41 +171,11 @@ input[type="number"] {
 }
 
 @media (max-width: 500px) {
-  .container {
-    height: fit-content;
-  }
-
-  .input-dev {
-    width: 30%;
-    margin-right: 5px;
-  }
-
   .inputs {
-    padding: 40px 0;
-  }
-
-  input {
-    width: 100%;
-    padding: 0 10px;
-    font-size: 24px;
-  }
-
-  ::placeholder {
-    font-size: 24px;
-  }
-
-  .result {
-    font-size: 30px;
-  }
-
-  .next-birthday-result {
-    display: block;
-  }
-}
-@media (max-width: 370px) {
-  .inputs {
+    gap: 10px;
     padding-top: 0;
     flex-direction: column;
+    padding-bottom: 30px;
   }
   .input-dev {
     width: 100%;
@@ -212,15 +183,13 @@ input[type="number"] {
   }
 
   input {
-    height: 40px;
+    height: 45px;
     padding: 5px;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
   }
 
   ::placeholder {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
   }
 
   .inputs .svg {
@@ -230,10 +199,15 @@ input[type="number"] {
   }
   .result {
     font-size: 18px;
+    padding-top: 20px;
   }
 
   .next-birthday-result {
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 385px) {
+  .next-birthday-result {
     display: block;
   }
 }
